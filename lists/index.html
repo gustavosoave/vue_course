@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vue App course</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="color in colors" v-if="color.primary">{{color}}</li>
+        </ul>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: { 
+              colors:  [
+                    {
+                        text: 'red',
+                        primary: true
+                    },
+                    {
+                        text: 'green',
+                        primary: false
+                    },
+                    {
+                        text: 'blue',
+                        primary: false
+                    },
+                    {
+                        text: 'yellow',
+                        primary: false
+                    },
+                    {
+                        text: 'orange',
+                        primary: false
+                    }
+                ]
+            }
+        })
+    </script>
+</body>
+
+</html>
