@@ -1,0 +1,1 @@
+This is the exercices I made during the training lessons
